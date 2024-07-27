@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-heading">
+        <h1>Rock-Paper-Scissor</h1>
+    </div>
+
+    <div class="game-container">
+        <div class="game-btn">
+                <button class="game" id="rock">
+                    <img src="./image/rock.png" alt="rock image" height="200px" width="200px">
+                </button>
+                <button class="game" id="paper">
+                    <img src="./image/paper.png" alt="" height="200px" width="200px">
+                </button>
+                <button class="game" id="scissor">
+                    <img src="./image/scissors.png" alt="" height="200px" width="200px">
+                </button>
+       </div>
+    </div>
+
+    <div class="Score-board">
+        <div class="user-board">
+            <p class="score">0</p>
+            <h4 class="user">You</h4>
+        </div>
+        <div class="computer">
+            <p class="score2">0</p>
+            <h4 class="computer-name">Computer</h4>
+        </div>
+
+    </div>
+
+    <div class="winner-page">
+        <div class="win-div">
+            <h1 class="winner-text drawh1">Play Game....</h1>
+            <h1 class="winner-text hide winner-text-2" >Your Choice <span class="yourchoice">rock</span>, Computer Choice
+                <span class="compchoice">paper</span>, Winner is <span class="winnerchoice"></span></h1>
+        </div>
+    </div>
+
+    <div class="button">
+        <button class="new-btn">New Game</button>
+        <button class="rule-btn"><a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors">Game Rule</a></button>
+    </div>
+    <script src="game.js"></script>
+
+    
+</body>
+</html>
