@@ -61,7 +61,6 @@ const ShowWinner=(userwin,userChoice,CompChoice)=>{
 }
 let PlayGame=(userChoice)=>{
     let CompChoice=randomChoice();
-    console.log("computer choice ",CompChoice);
 
     let userwin=true;
     if(userChoice===CompChoice){
@@ -88,10 +87,8 @@ let PlayGame=(userChoice)=>{
 }
 
 gamebtn.forEach((choice)=>{
-    console.log(choice);
     choice.addEventListener("click",()=>{
         let userChoice=choice.getAttribute("id");
-        console.log("your choice ",userChoice);
         PlayGame(userChoice);  
     })
 })
